@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a HTML, CSS y JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 20px;
+        }
+        section {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        p {
+            line-height: 1.6;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 5px;
+            border-radius: 3px;
+            display: block;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            white-space: pre-wrap;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Introducción a HTML, CSS y JavaScript</h1>
+
+    <section>
+        <h2>¿Qué es HTML?</h2>
+        <p>
+            HTML (HyperText Markup Language) es el lenguaje estándar utilizado para crear páginas web. 
+            Se utiliza para estructurar el contenido en la web, permitiendo definir elementos como títulos, párrafos, imágenes, enlaces y más.
+        </p>
+        <p>
+            HTML se compone de una serie de elementos, que son representados mediante etiquetas. Estas etiquetas pueden ser anidadas para crear una estructura jerárquica de contenido.
+        </p>
+        <p>
+            Un ejemplo de código HTML simple sería:
+        </p>
+        <code>
+            &lt;h1&gt;Este es un título&lt;/h1&gt;<br>
+            &lt;p&gt;Este es un párrafo.&lt;/p&gt;<br>
+            &lt;a href="https://www.ejemplo.com"&gt;Este es un enlace&lt;/a&gt;
+        </code>
+        <p>
+            Algunos elementos importantes de HTML incluyen:
+        </p>
+        <ul>
+            <li><strong>&lt;div&gt;</strong>: un contenedor genérico para agrupar elementos.</li>
+            <li><strong>&lt;span&gt;</strong>: un contenedor en línea para aplicar estilos.</li>
+            <li><strong>&lt;img&gt;</strong>: para insertar imágenes.</li>
+            <li><strong>&lt;ul&gt; / &lt;ol&gt;</strong>: para listas desordenadas y ordenadas.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>¿Qué es CSS?</h2>
+        <p>
+            CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para describir la presentación de un documento escrito en HTML. 
+            Permite modificar aspectos visuales como colores, fuentes, espaciado y disposición de los elementos en una página web.
+        </p>
+        <p>
+            CSS se puede aplicar de tres maneras: 
+            <strong>en línea</strong> (dentro de las etiquetas HTML), <strong>en la cabecera</strong> (en el elemento <code>&lt;style&gt;</code> del HTML) o <strong>en un archivo externo</strong> (usando la etiqueta <code>&lt;link&gt;</code>).
+        </p>
+        <p>
+            Un ejemplo de código CSS sería:
+        </p>
+        <code>
+            body {<br>
+                background-color: lightblue;<br>
+            }<br>
+            h1 {<br>
+                color: white;<br>
+                text-align: center;<br>
+            }<br>
+            p {<br>
+                font-size: 18px;<br>
+            }
+        </code>
+        <p>
+            Algunas propiedades CSS comunes son:
+        </p>
+        <ul>
+            <li><strong>color</strong>: establece el color del texto.</li>
+            <li><strong>background-color</strong>: establece el color de fondo de un elemento.</li>
+            <li><strong>margin</strong>: controla el espacio exterior alrededor de un elemento.</li>
+            <li><strong>padding</strong>: controla el espacio interior de un elemento.</li>
+            <li><strong>font-size</strong>: establece el tamaño de la fuente.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>¿Qué es JavaScript?</h2>
+        <p>
+            JavaScript es un lenguaje de programación que permite implementar funcionalidades complejas en las páginas web. 
+            Con JavaScript, puedes crear elementos interactivos y dinámicos, como formularios, animaciones, juegos y más.
+        </p>
+        <p>
+            JavaScript se ejecuta en el navegador del cliente, lo que permite interacciones sin necesidad de recargar la página. 
+            Se utiliza en la mayoría de los sitios web modernos para mejorar la experiencia del usuario.
+        </p>
+        <p>
+            Un ejemplo de código JavaScript sería:
+        </p>
+        <code>
+            function saludo() {<br>
+                alert('¡Hola, mundo!');<br>
+            }<br><br>
+            // Llama a la función cuando se hace clic en un botón<br>
+            document.getElementById('miBoton').onclick = saludo;
+        </code>
+        <p>
+            Algunas características de JavaScript son:
+        </p>
+        <ul>
+            <li><strong>Manipulación del DOM</strong>: permite cambiar la estructura y el contenido de la página web.</li>
+            <li><strong>Eventos</strong>: permite responder a acciones del usuario, como clics o movimientos del mouse.</li>
+            <li><strong>Funciones y objetos</strong>: permite la programación orientada a objetos y la creación de funciones reutilizables.</li>
+            <li><strong>AJAX</strong>: permite realizar peticiones asíncronas al servidor sin recargar la página.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Gonzalo López Gordo 2ºSMR</p>
+    </footer>
+
+    <script>
+        // Ejemplo de JavaScript para ejecutar una función al cargar la página
+        window.onload = function() {
+            saludo();
+        };
+    </script>
+</body>
+</html>
