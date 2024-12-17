@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background:(to right ,#8b8b8b, #09ff00);
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 25em white ;
+    width: 100%;
+    height: auto;
+    padding: 3vh;
+}
+header h1 {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0 auto;
+}
+h2{
+    color: rgb(60, 255, 0);
+    text-align: start;
+    font-family: verdana;
+}
+nav {
+    background-color: rgb(81, 255, 0);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 5px 0 5px 0;
+}
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+nav a:hover {
+    color: red;
+    text-decoration: underline;
+}
+nav a:active {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+nav a:visited {
+    color: rgb(102, 255, 0);
+    text-decoration: underline;
+}
+section {
+    width: 100%;
+    padding: 5px;
+}
+section div {
+    text-align: justify;
+    font-size: 20px;
+    margin: 5px 0 0 0;
+}
+section div h2 {
+    text-decoration: underline;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+.container {
+    margin: 0 auto;
+    width: 35vh;
+    height: 35vh;
+    margin-top: 0;
+}
+.container img {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    border-radius: 12px;
+    box-shadow: 12px black;
+    padding: 0;
+}
+section div ul {
+    margin: 20px;
+}
+section div iframe {
+    width: 50vh;
+    height: 50vh;
+    margin: 0 auto;
+}
+body {
+    background: linear-gradient(to right, gray, white);
+}
+
+footer{
+        background-color: red;
+        margin: top 1px; ;
+
+}
